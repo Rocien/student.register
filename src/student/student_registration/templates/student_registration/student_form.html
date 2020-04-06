@@ -1,0 +1,40 @@
+{% extends 'student_registration/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+
+    <!-- This is to customize each fields size... on the form with crispy-form-->
+    
+    <div class="row">
+        <div class="col-md-6">
+            {{ form.name|as_crispy_field }}
+        </div>
+        <div class="col-md-6">
+            {{ form.surname|as_crispy_field }}
+        </div>
+        <div class="col-md-12">
+            {{ form.address|as_crispy_field }}
+        </div>
+        <div class="col-md-6">
+            {{ form.mobile|as_crispy_field }}
+        </div>
+        <div class="col-md-6">
+            {{ form.grade|as_crispy_field }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- {{form}} this used to call the form from forms.py, it is removed cause we using crispy form -->
+            <button type="submit" class="btn btn-success btn-block btn-lg"><i class="fas fa-database"></i>submit</button>
+        </div>
+        <div class="col-md-6">
+            <a href="{% url 'student_list' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-stream"></i> Back to list
+            </a>
+        </div>
+    </div>
+
+</form>
+{% endblock content %}

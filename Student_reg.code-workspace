@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "src"
+		}
+	],
+	"settings": {
+		"vsintellicode.features.python.deepLearning": "enabled"
+	},
+	"extensions": {
+		"recommendations": []
+	}
+}

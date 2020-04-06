@@ -1,0 +1,20 @@
+{
+    // "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7",
+    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7",
+    "python.autoComplete.extraPaths": [
+        "~/google-cloud-sdk/platform/google_appengine/lib/webapp2-2.5.2",
+        "~/google-cloud-sdk/platform/google_appengine",
+        "~/google-cloud-sdk/lib",
+        "~/google-cloud-sdk/platform/google_appengine/lib/endpoints-1.0",
+        "~/google-cloud-sdk/platform/google_appengine/lib/protorpc-1.0",
+        "./path-to-your-code"
+    ],
+    "editor.cursorStyle": "line-thin",
+    "editor.fontFamily": "Firecode, monospace",
+    "editor.formatOnType": true,
+    "diffEditor.maxComputationTime": 0,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "python.autoComplete.addBrackets": true,
+    "python.linting.enabled": false,
+    "editor.fontSize": 13,
+}
