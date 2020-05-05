@@ -2,11 +2,10 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<p class="lead font-italic">Please fill the form and submit.</p>
 <form action="" method="post" autocomplete="off">
     {% csrf_token %}
-
     <!-- This is to customize each fields size... on the form with crispy-form-->
-    
     <div class="row">
         <div class="col-md-6">
             {{ form.name|as_crispy_field }}
@@ -35,6 +34,10 @@
             </a>
         </div>
     </div>
-
+    <div class="col-md-0">
+        <a href="{% url 'logout' %}" class="btn btn-block btn-">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+    </div>
 </form>
 {% endblock content %}

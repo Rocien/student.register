@@ -128,3 +128,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+LOGIN_URL = 'login'     # Requires login before to go to any page including Student form & List
+
+LOGIN_REDIRECT_URL = 'student/'  #Redirect django admin URL to student

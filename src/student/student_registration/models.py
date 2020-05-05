@@ -10,8 +10,8 @@ class grade(models.Model):
 
 # Student class
 class Student(models.Model):
-    name        = models.CharField(max_length=50)
-    surname     = models.CharField(max_length=50)
-    address     = models.CharField(max_length=200)
-    mobile      = models.CharField(max_length=10)
-    grade       = models.ForeignKey(grade,on_delete=models.CASCADE)
+    name            = models.CharField(max_length=50)
+    surname         = models.CharField(max_length=50)
+    address         = models.CharField(max_length=200)
+    mobile          = models.CharField(max_length=10)
+    grade           = models.ForeignKey(grade,on_delete=models.CASCADE)

@@ -1,6 +1,7 @@
 {% extends 'student_registration/base.html' %}
 
 {% block content %}
+<p class="lead font-italic">This is the list of all registered students.</p>
 <table class="table table-borderless">
     <thead class="border-bottom font-weight-bold">
         <tr>
@@ -41,4 +42,9 @@
         {% endfor %}
     </tbody>
 </table>
+<div class="col-md-0">
+    <a href="{% url 'logout' %}" class="btn btn-block btn-">
+        <i class="fas fa-sign-out-alt"></i> Logout
+    </a>
+</div>
 {% endblock content %}
